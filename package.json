@@ -1,0 +1,13 @@
+{
+  "name": "execq",
+  "version": "1.0.1",
+  "description": "pending the operation and do them in a right time",
+  "main": "execQueue.js",
+  "keywords": [
+    "execQ",
+    "queue",
+    "pend"
+  ],
+  "author": "Ran",
+  "license": "MIT"
+}
