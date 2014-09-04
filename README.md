@@ -62,3 +62,4 @@ execute the commands from the seqnum
 execQ.clean();
 ```
 
+execQ will emit event `pending` on invoking `.pend()`, and emit event `continue` on finish invoking `.goon()`

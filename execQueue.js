@@ -1,8 +1,10 @@
-
+var EventEmitter = require('events').EventEmitter;
 var ExecQ = function (maxlen) {
   this._queue = [];
   this.maxLength = maxlen || 1000;
 };
+
+ExecQ.prototype = Object.create(EventEmitter.prototype);
 
 /* operation is an array */
 /* 
@@ -15,6 +17,7 @@ ExecQ.prototype.pend = function (operation) {
     this._queue.push(operation);
   else if (typeof operation == 'function')
     this._queue.push([null, operation, []]);
+  this.emit('pending', operation);
 };
 ExecQ.prototype.goon = function (num) {
   if (!this._queue.length)
@@ -31,6 +34,7 @@ ExecQ.prototype.goon = function (num) {
       f.apply(o, argv);
     }, operation);
   });
+  this.emit('continue', this._queue);
 };
 ExecQ.prototype.clean = function () {
   this._queue = [];
