@@ -40,4 +40,10 @@ ExecQ.prototype.clean = function () {
   this._queue = [];
 };
 
+Object.defineProperty(ExecQ.prototype, 'length', {
+  get: function () {
+    return this._queue.length;
+  }
+});
+
 module.exports = ExecQ;

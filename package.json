@@ -1,6 +1,6 @@
 {
   "name": "execq",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "pending the operation and do them in a right time",
   "main": "execQueue.js",
   "repository": {
@@ -10,7 +10,9 @@
   "keywords": [
     "execQ",
     "queue",
-    "pend"
+    "pend",
+    "async",
+    "block"
   ],
   "author": "Ran",
   "license": "MIT"
