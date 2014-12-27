@@ -1,8 +1,8 @@
 ###execQ
 
-pending the commands and execute them in a right time.
+pending the commands and execute them in a right time. 
 
-used in project [fSlider_ws-Rainy](https://github.com/abbshr/fSlider_ws)
+used in project [RocketEngine](https://github.com/abbshr/fSlider_ws)
 
 ####Install
 
@@ -34,6 +34,12 @@ worker.on('works done', function () {
 ```js
 // init the max pending-queue lenght
 var execQ = new require('exdecq')(maxlen);
+```
+_`maxlen` default to `1000`_
+
+```js
+// get pending queue's length
+execQ.length // => x
 ```
 
 ```js
