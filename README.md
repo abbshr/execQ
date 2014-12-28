@@ -2,7 +2,7 @@
 
 pending the commands and execute them in a right time. 
 
-used in project [RocketEngine](https://github.com/abbshr/fSlider_ws)
+used in project [RocketEngine](https://github.com/abbshr/RocketEngine)
 
 ####Install
 

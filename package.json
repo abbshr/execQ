@@ -1,6 +1,6 @@
 {
   "name": "execq",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "pending the operation and do them in a right time",
   "main": "execQueue.js",
   "repository": {
